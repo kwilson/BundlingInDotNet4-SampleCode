@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BundlingInDotNet4.Webforms", "BundlingInDotNet4.Webforms\BundlingInDotNet4.Webforms.csproj", "{A78C7E81-B455-467D-8E45-1B3284CE2C1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BundlingInDotNet4.Mvc", "BundlingInDotNet4.Mvc\BundlingInDotNet4.Mvc.csproj", "{C47AD359-E6E6-4670-966C-F1F552985646}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A78C7E81-B455-467D-8E45-1B3284CE2C1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A78C7E81-B455-467D-8E45-1B3284CE2C1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A78C7E81-B455-467D-8E45-1B3284CE2C1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A78C7E81-B455-467D-8E45-1B3284CE2C1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C47AD359-E6E6-4670-966C-F1F552985646}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C47AD359-E6E6-4670-966C-F1F552985646}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C47AD359-E6E6-4670-966C-F1F552985646}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C47AD359-E6E6-4670-966C-F1F552985646}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
