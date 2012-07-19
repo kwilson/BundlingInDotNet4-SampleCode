@@ -1,16 +1,17 @@
-﻿(function(GLOBAL) {
+﻿(function (GLOBAL) {
 
-    var library = function() {
+    var library = function () {
 
-        var sayHello = function(name) {
-            alert("Hello, " + name);
+        var sayHello = function (name, elementId) {
+            var element = document.getElementById(elementId);
+            element.innerHTML = "Hello, " + name + ", JavaScript is running.";
         };
 
         return {
             speakToMe: sayHello
         };
-    }();
+    } ();
 
     GLOBAL["library"] = library;
 
-}(window));
+} (window));

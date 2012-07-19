@@ -7,3 +7,12 @@
 h1 {
     font-size: 1.4em;
 }
+
+h1,p,textarea {
+    margin-bottom: 1.4em;
+}
+
+textarea {
+    width: 100%;
+    height: 8em;
+}

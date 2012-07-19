@@ -8,19 +8,28 @@
 <head runat="server">
     <meta charset="utf-8">
     <title>Bundling in .NET4 - MVC</title>
-    <link href="@BundleTable.Bundles.ResolveBundleUrl("~/css")" rel="stylesheet"/>
-    <script src="@BundleTable.Bundles.ResolveBundleUrl("~/js")"></script>
+    @Styles.Render("~/css")
+    @Scripts.Render("~/js")
     <script>
         window.onload = function () {
-            library.speakToMe("Kevin");
+            library.speakToMe("Kevin", "placeholder");
         };
     </script>
 </head>
 <body>
     <div id="pageholder">
         <h1>Bundling in .NET4 - MVC</h1>
-        <p>Compiled CSS is created here: <a href="@BundleTable.Bundles.ResolveBundleUrl("~/css")">~/css</a></p>
-        <p>Compiled JS is created here: <a href="@BundleTable.Bundles.ResolveBundleUrl("~/js")">~/js</a></p>
+        <p>JavaScript test: <span id="placeholder">No JS running.</span></p>
+
+        <p>Compiled CSS is rendered as: <a href="@Styles.Url("~/css")">~/css</a></p>
+        <textarea>@Styles.Render("~/css")</textarea>
+
+        <p>Compiled CSS is created here: <a href="@Scripts.Url("~/js")">~/js</a></p>
+        <textarea>@Scripts.Render("~/js")</textarea>
+
+        <p>These linked files are always minified and compressed. The actual references within the
+            HTML are dependent on whether debugging is enabled in web.config:</p>
+        <p>enabled = no change<br />disabled = bundle + minify</p>
     </div>
 </body>
 </html>
